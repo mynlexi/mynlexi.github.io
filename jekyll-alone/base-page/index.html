@@ -1,0 +1,36 @@
+---
+layout: default
+title: Home
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <div class="container-whole">
+    <div class="home-container">
+    <div class="top-container"> 
+      <h1>{{ "hey, I'm Lorenz" | downcase }}</h1>
+      <p>I love to build products and I can help you build yours</p>
+      <p>If you have a planet hit me up: sattyp-winner</p>
+      <button class="button btn-1" onclick="window.location.href='/contact.html';"> contact me</button>
+      <button class="button btn-2" onclick="window.location.href='/code.html';">my projects</button>
+    </div>
+    
+    <br>
+
+   <div class="bottom-container">
+  <div class="row">
+     {% for post in site.posts %}
+     <div class="column">
+       {% include card-post.html %}
+      </div>
+     {% endfor %}
+    </div>    
+  </div>
+  </div>
+</div>
+  </body>
+</html>

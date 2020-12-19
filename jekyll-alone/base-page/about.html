@@ -1,0 +1,73 @@
+---
+layout: default
+title: about
+projects: project
+cv: education
+---
+<div class="about-top-container">
+  <div class="freelance-info">
+    <h1> Freelancer for your needs</h1>
+    <p>Wether your needs are static or dynamic, I can build your projects.
+       I also have an business and finance background if you are in the need of consultation </p>
+  
+
+  </div>
+  <div class="about-navbar">
+    <button class="about-button active" id="projects">Projects</button>
+    <button class="about-button" id="techstack">Techstack</button>
+    <button class="about-button" id="cv">CV</button>
+
+  </div>
+</div>
+<div class="about-bottom-container">
+  <div class="about-project ">
+    <div class="row" style="height: auto;">
+      {% assign filtered_posts = site.posts | where: 'type', page.projects %}
+      {% for post in filtered_posts %}
+
+      <div class="column left-column">
+        {% include card-post.html %}
+       </div>
+ {% endfor %}
+     </div>
+
+  </div>
+  <div class="about-techstack hidden">
+    <div class="grid-container">
+      <div class="techgrid">
+        <h3 class="title">web development</h3>
+        <p>Ruby on Rails</p>
+        <p>jekyll</p>
+      </div>
+      <div class="techgrid">
+        <h3 class="title">frontend</h3>
+        <p>React
+          (Coming Soon)</p>
+      </div>
+      <div class="techgrid">
+        <h3 class="title">backend</h3>
+        <p>Node.js
+          (Coming Soon)</p>
+      </div>
+      <div class="techgrid">
+        <h3 class="title">css</h3>
+        <p>Bootstrap</p>
+        <p>Tailwind
+          (Coming Soon)</p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="about-cv hidden">
+    <div class="row" style="height: auto;">
+      {% assign filtered_posts = site.posts | where: 'type', page.cv %}
+      {% for post in filtered_posts %}
+
+      <div class="column right-column">
+        {% include card-post.html %}
+       </div>
+ {% endfor %}
+
+  </div>
+</div>
