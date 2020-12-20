@@ -1,0 +1,79 @@
+.navbar-container {
+ display: flex;
+ align-items: centered;
+ justify-content: center;
+
+}
+  .navbar {
+    position: relative;
+    width: 720px;
+    height: 96px;
+    
+  }
+
+/* home */
+.home { 
+  position: absolute;
+  left: 7.36%;
+  right: 76.11%;
+  top: 37.5%;
+  bottom: 37.5%;
+
+  font-family: Saira;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  letter-spacing: 0.77em;
+  text-decoration: none;
+  color: #000000;
+  }
+
+
+/* about */
+.about { 
+  position: absolute;
+  left: 40.42%;
+  right: 40.28%;
+  top: 37.5%;
+  bottom: 37.5%;
+
+  font-family: Saira;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  letter-spacing: 0.77em;
+  text-decoration: none;
+
+  color: #000000;
+
+}
+
+/* code */
+.code {
+  position: absolute;
+  left: 76.25%;
+  right: 8.75%;
+  top: 37.5%;
+  bottom: 37.5%;
+
+  font-family: Saira;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  letter-spacing: 0.77em;
+  text-decoration: none;
+
+  color: #000000;
+
+
+}
+

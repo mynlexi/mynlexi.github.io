@@ -1,0 +1,23 @@
+.current {
+  color: rgba(8, 253, 20, 0.616);
+}
+
+.container-whole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Saira;
+}
+
+button:active,
+button:focus,
+input,
+input:active,
+input:focus {
+  outline: 0;
+  outline-style:none;
+  outline-width:0;
+}
