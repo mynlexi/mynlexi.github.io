@@ -1,0 +1,43 @@
+.contact {
+  width: 200px;
+  margin: 0 auto;
+  
+
+
+}
+
+.contact-row {
+  width: 100px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 2px;
+
+}
+
+.linkedin {
+
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+
+}  
+.email-icon {
+  height: 68px;
+
+}
+
+.icon:hover {
+  background: linear-gradient(white, rgb(230, 131, 131),  rgb(219, 59, 59))
+}
+
+.email-icon:hover {
+  background: linear-gradient(white, rgb(230, 131, 131),  rgb(219, 59, 59))
+}
